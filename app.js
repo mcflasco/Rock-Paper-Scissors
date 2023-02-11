@@ -1,10 +1,26 @@
 const options = ["rock", "paper", "scissors"];
+const rock = document.querySelector('.rock')
+const paper = document.querySelector('.paper')
+const scissors = document.querySelector('.scissors')
+
 let computerSelection;
 let playerSelection;
 let computerScore = 0;
 let playerscore = 0;
 
 //Prompt user for Rock, Paper, or Scissors
+
+rock.addEventListener('click', () =>{
+  console.log("ROCK!!!")
+})
+
+paper.addEventListener('click', () =>{
+  console.log("PAPER!!!")
+})
+
+scissors.addEventListener('click', () =>{
+  console.log("SCISSORS!!!")
+})
 
 // Generate random choice for CPU
 const getComputerChoice = () => {
@@ -40,6 +56,6 @@ const game = () => {
   console.log(playRound(playerSelection, computerSelection));
 };
 
-for (let i = 0; i < 5; i++) {
-  game();
-}
+// for (let i = 0; i < 5; i++) {
+//   game();
+// }
